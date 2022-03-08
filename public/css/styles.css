@@ -33,15 +33,15 @@ header .header-p-barradebusqueda {
     width: 60%;
     padding: 12px;
     align-items: center;
-    
+
 
 }
 
 header .header-p-barradebusqueda form {
-      display:flex;
-      width: 100%;
-      height: 36px;
-      
+    display: flex;
+    width: 100%;
+    height: 36px;
+
 }
 
 header .header-p-barradebusqueda form input {
@@ -50,6 +50,7 @@ header .header-p-barradebusqueda form input {
     padding-left: 10px;
 
 }
+
 header .header-p-barradebusqueda form button {
     display: block;
     width: 10%;
@@ -92,7 +93,7 @@ header div i {
 }
 
 /* icono azul de categorias */
-header #icono-categorias{
+header #icono-categorias {
     background-color: rgb(25, 25, 160);
     color: white;
     border-radius: 4px;
@@ -101,45 +102,124 @@ header #icono-categorias{
     max-width: 50px;
 }
 
+main {
+    background-color:gainsboro;
+    width: 100%;
+    padding-bottom: 5px;
+}
 
+main section{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+main h2 {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
 
 main div img {
-    width: 100vw;
+    width: 100%;
 }
 
-.product_img{
-    padding: 100px;
+article .description {
+padding: 20px;
+
 }
 
- .main-text-images{
+article p,  article h4{ 
+    display:block;
+    width: 100%;
+
+}
+
+main article {
+    display:flex;
+    flex-wrap: wrap;
+    width: 90%;
+    box-shadow: 5px 5px 5px #999;
+    background-color: white;
+    margin: auto;
+    margin-bottom:12px;
+    
+}
+
+main article img{
+    display: block;
+    width: 100%;
+}
+
+
+
+.main-text-images {
     text-align: center;
 
 }
 
-section .text-p{
+section .text-p {
     text-align: center;
 }
 
 
+footer {
+    display: flex;
+    font-size: 17px;
+    flex-wrap: wrap;
+   text-shadow: gray;
+}
 
 
 
-
-.footer-footer{
-    background-color: gainsboro;
+.footer-footer {
+    background-color: white;
     /* flex-wrap: wrap;
     flex-direction:row; */
 
+}
+
+footer section {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+}
+
+footer section div {
+    text-align: center;
+    margin: 12px;
 
 }
 
+
+
 @media (min-width: 768px) {
+
+   
+
+    header nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul {
+
+        display: flex;
+        list-style: none;
+    }
+
+    header nav ul a {
+        text-decoration: none;
+        color: #000;
+    }
 
 
     header img {
         width: 30%;
-        
-       
 
 
     }
@@ -148,10 +228,10 @@ section .text-p{
 
         width: 40%;
 
-              
+
     }
 
-   
+
 
     header .compraencuotas {
         width: 30%;
@@ -166,67 +246,63 @@ section .text-p{
 
     }
 
-    header #icono-categorias{
+    header #icono-categorias {
         display: none;
     }
 
-   
-
-    header nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        
-    }
-
-    header nav ul {
-
-        display: flex;
-        list-style: none;
-
-
-    }
 
     header nav ul a {
 
-     margin: 0 10px;
-     padding: 20px;
+        margin:  10px;
+        padding: 20px;
 
     }
 
-@media (min-width: 1200px) {
+    main article{
+        width: 40%;
+    }
 
-  header nav{
-      max-width: 1200px;
-      margin: auto;
-  }
-
-  header nav ul{
-      padding-top: 20px;
-
-  }
-
-  header nav ul a {
-
-    margin: 5px;
-    font-size: 17px;
-    text-decoration: none;
-    color: #000;
-    
-   }
     
 
+    @media (min-width: 1200px) {
 
-}
+        header nav {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header nav ul {
+            padding-top: 20px;
+
+        }
+
+        header nav ul a {
+
+            margin: 5px;
+            font-size: 17px;
+            text-decoration: none;
+            color: #000;
+
+        }
+
+        main article{
+            width: 20%;
+        }
 
 
 
+        footer section {
 
+            width: 33.3%;
+        }
 
+       footer .footer-copyright{
+           width: 100%;
+           
 
+  }
 
-
-
+    }
 
 
 }
